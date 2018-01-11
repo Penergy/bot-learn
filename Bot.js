@@ -26,6 +26,15 @@ class Bot extends BaseBot{
             };
         })
 
+        this.addIntentHandler('increase_voice', ()=>{
+            let card = new Bot.Card.TextCard('太轻了，对吧。我就知道！！！')
+            return {
+                card : card,
+                outputSpeech : '太轻了，对吧。我就知道！'
+            };
+        })
+        
+
         this.addIntentHandler('personal_income_tax.inquiry', ()=>{
             let loc = this.getSlot('location');    
             let monthlySalary = this.getSlot('monthlysalary');
