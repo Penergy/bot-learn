@@ -11,7 +11,7 @@ class Bot extends BaseBot{
         });
 
         this.addIntentHandler('close_corp_video', ()=>{
-            let card = new Bot.Card.TextCard('正在关闭，请稍后！')
+            let card = new Bot.Card.TextCard('正在关闭，请稍后！！！')
             return {
                 card : card,
                 outputSpeech : '正在关闭，请稍后！'
