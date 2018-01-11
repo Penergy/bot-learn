@@ -6,6 +6,15 @@ class Bot extends BaseBot {
         super(postData);
 
         this.addLaunchHandler(() => {
+            http.get({
+                hostname: '10.1.3.5',
+                port: 5000,
+                path: '/',
+                agent: false  // 创建一个新的代理，只用于本次请求
+            }, (res) => {
+                // 对响应进行处理
+            });
+            
             return {
                 outputSpeech: '欢迎使用12345690!'
             };
