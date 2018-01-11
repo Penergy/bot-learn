@@ -14,7 +14,7 @@ class Bot extends BaseBot{
             let card = new Bot.Card.TextCard('正在关闭，请稍后！！！')
             return {
                 card : card,
-                outputSpeech : '正在关闭，请稍后！'
+                outputSpeech : '领导，正在关闭，请稍后！'
             };
         })
 
