@@ -18,6 +18,14 @@ class Bot extends BaseBot{
             };
         })
 
+        this.addIntentHandler('open_corp_video', ()=>{
+            let card = new Bot.Card.TextCard('马上打开！！！')
+            return {
+                card : card,
+                outputSpeech : '领导，这就给你放视频！'
+            };
+        })
+
         this.addIntentHandler('personal_income_tax.inquiry', ()=>{
             let loc = this.getSlot('location');    
             let monthlySalary = this.getSlot('monthlysalary');
