@@ -6,7 +6,7 @@ class Bot extends BaseBot{
 
         this.addLaunchHandler(()=>{
             return {
-                outputSpeech : '欢迎使用123456!'
+                outputSpeech : '欢迎使用12345690!'
             };
         });
 
